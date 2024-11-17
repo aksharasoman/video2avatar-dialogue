@@ -58,7 +58,7 @@ The `pipeline.py` script achieves the following:
 
 ## Example
 
-For a complete working example, see the demo [here](https://www.sievedata.com/jobs/dbf2354f-d096-4640-bc76-576d0265e9cd).
+For a complete working example, see the demo [here](https://www.sievedata.com/jobs/4e76d8e5-3b0c-436e-98fa-c48d310ed60f).
 
 ## Explanation of `pipeline.py`
 
