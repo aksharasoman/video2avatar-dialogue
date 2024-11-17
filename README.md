@@ -22,9 +22,9 @@ The `pipeline.py` script achieves the following:
 
 ### Requirements
 
-- **Python 3.7+**
-- **Sieve Python Client**
-- **ffmpeg**
+- Python 3.7+
+- Sieve Python Client
+- ffmpeg
 
 1. Clone this repository:
 
@@ -88,7 +88,8 @@ We run these sieve functions iteratively for each turn of the conversation to ge
    ```bash
    ffmpeg -f concat -safe 0 -i file_list.txt -c copy output.mp4
    ```
-
+## Tutorial
+For a detailed explanation, follow the tutorial [here](https://docs.google.com/document/d/1zXoZHmIz-kIjKEnVMis2V6NU3rJo5AaGe-OUDlDf57k/edit?usp=sharing).
 
 ## Acknowledgments
 
