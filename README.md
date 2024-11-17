@@ -1,5 +1,4 @@
-# video2avatar-dialogue
-Transform YouTube Videos into Conversational Avatars with Sieve API toolkit.
+# Transform YouTube Videos into Conversational Avatars with the Sieve API toolkit.
 
 This repository contains the script `pipeline.py` to transform YouTube videos into engaging, conversational avatars using Sieve APIs. The goal is to automate the process of repurposing video content into interactive dialogues between two talking avatars, ideal for storytelling, educational purposes, or creating dynamic presentations.
 
@@ -13,19 +12,19 @@ The `pipeline.py` script achieves the following:
 4. **Talking Avatar Generation**: Creates two distinct avatars to narrate the conversation using Sieve's portrait-avatar API.
 5. **Merge Video Clips**: Combines individual video segments into a final video using `ffmpeg`.
 
-### Key Benefit
+### Key Benefits
 - **Repurpose Content**: Convert lengthy videos into bite-sized, conversational narratives.
 - **Interactive Presentations**: Make content more engaging with avatars.
 - **Time Efficiency**: Summarization saves time while retaining the core message.
 - **Creative Possibilities**: Perfect for storytelling, education, or marketing.
 
-## Requirements
+## Installation
+
+### Requirements
 
 - **Python 3.7+**
 - **Sieve Python Client**
 - **ffmpeg**
-
-### Installation
 
 1. Clone this repository:
 
@@ -59,7 +58,7 @@ The `pipeline.py` script achieves the following:
 
 ## Example
 
-For a complete working example, see the demo [here](https://github.com/aksharasoman/video2avatar-dialogue).
+For a complete working example, see the demo [here](https://www.sievedata.com/jobs/dbf2354f-d096-4640-bc76-576d0265e9cd).
 
 ## Explanation of `pipeline.py`
 
