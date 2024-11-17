@@ -171,7 +171,7 @@ if __name__ == "__main__":
     youtube_url = "https://youtube.com/shorts/D-F32ieZ4WA?si=X7QzBXMEuJM6d-E4"
     odd_voice = "cartesia-commercial-man"
     even_voice = "cartesia-sweet-lady"
-    odd_image = sieve.File(url="https://storage.googleapis.com/sieve-prod-us-central1-public-file-upload-bucket/c4d968f5-f25a-412b-9102-5b6ab6dafcb4/4c35f0b2-5925-4acc-8870-0b06641fd5f6-boy.jpg")
+    odd_image = sieve.File(url="https://storage.googleapis.com/sieve-prod-us-central1-public-file-upload-bucket/c4d968f5-f25a-412b-9102-5b6ab6dafcb4/342623d3-10ce-4f43-8c2d-d445639225ac-boy.jpeg")
     even_image = sieve.File(url="https://storage.googleapis.com/sieve-prod-us-central1-public-file-upload-bucket/dea37047-9b88-44b7-aacb-a5f4745f1f2d/db7a439e-24f8-40cd-b29d-43935e1a2ae7-input-source_image.jpg")
-   
+
     output_video = video2dialogue(youtube_url,odd_voice,even_voice,odd_image,even_image)
