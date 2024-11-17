@@ -56,10 +56,6 @@ The `pipeline.py` script achieves the following:
 
    The final video featuring talking avatars will be saved in your project directory. Logs and job statuses can be monitored on the Sieve dashboard.
 
-## Example
-
-For a complete working example, see the demo [here](https://www.sievedata.com/jobs/4e76d8e5-3b0c-436e-98fa-c48d310ed60f).
-
 ## Explanation of `pipeline.py`
 
 The script follows these steps, with the main part outlined below:
@@ -90,6 +86,10 @@ We run these sieve functions iteratively for each turn of the conversation to ge
    ```
 ## Tutorial
 For a detailed explanation, follow the tutorial [here](https://docs.google.com/document/d/1zXoZHmIz-kIjKEnVMis2V6NU3rJo5AaGe-OUDlDf57k/edit?usp=sharing).
+
+## Demo
+
+For a complete working example, see the demo [here](https://www.sievedata.com/jobs/4e76d8e5-3b0c-436e-98fa-c48d310ed60f).
 
 ## Acknowledgments
 
