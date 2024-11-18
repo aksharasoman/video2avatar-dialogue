@@ -18,6 +18,11 @@ The `pipeline.py` script achieves the following:
 - **Time Efficiency**: Summarization saves time while retaining the core message.
 - **Creative Possibilities**: Perfect for storytelling, education, or marketing.
 
+## Files
+- pipeline.py: the script implementing the 'video2dialogue' tool.
+- parallelized_version/pipeline.py: It's efficient parallelized version.
+- examples/ : contains a sample output video and summary text generated.
+
 ## Installation
 
 ### Requirements
