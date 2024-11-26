@@ -16,14 +16,12 @@ Or see [Calling `video2dialogue` via the Sieve SDK](#calling-video2dialogue-via-
 
 ## Options
 
-* `background_img`: A background image to use for the background replacement. Overrides `background_color_rgb`.
-* `background_color_rgb`: A comma-separated string representing the RGB color to use for the background replacement.
-* `blur_background`: If true, blurs the background.
-    * If `background_img` is provided, blurs the background image.
-    * Otherwise, blurs the background of the input video.
-* `blur_strength`: Size of blurring kernel. Larger values blur the background more. A value of 0 means no blurring. Defaults to 19.
+* `youtube_url`: url of the youtube video 
+* `voice1` and `voice2`: voice for speakers in the generated dialogue (choose a non-cloning voice compatible with sieve-tts. See [sieve/tts](https://sievedata.com/functions/sieve/tts) readme).
+* `image1` and `image2`: Input images for the talking avatars.
 
-## Calling `speaker-enhance` via the Sieve SDK
+
+## Calling `video2dialogue` via the Sieve SDK
 You can install `sieve` via pip with `pip install sievedata`.
 Be sure to set `SIEVE_API_KEY` to your Sieve API key. 
 You can find your API key at [https://www.sievedata.com/dashboard/settings](https://www.sievedata.com/dashboard/settings).
@@ -31,22 +29,18 @@ You can find your API key at [https://www.sievedata.com/dashboard/settings](http
 ```python
 import sieve
 
-# get the speaker-enhance function
-speaker_enhance = sieve.function.get("sieve/speaker-enhance")
+# get the video2dialogue function
+video2dialogue = sieve.function.get("sieve/video2dialogue")
 
-# get input video, background image, and options
-video = sieve.File("path/to/video.mp4")
-background_img = sieve.File("path/to/background.png")
-blur_background = True
+# get input video url, avatar images, and speaker voice options.
+url = "https://www.youtube.com/watch?v=AKJfakEsgy0"
+voice1 = "cartesia-commercial-man"
+voice2 = "cartesia-sweet-lady"
+image1 = sieve.File("path/to/portrait-man.png")
+image2 = sieve.File("path/to/portrait-lady.png")
 
-# create a corrected video with the new background
-out = speaker_enhance.run(video, background_img=background_img)
-
-# create a corrected video with the original background blurred
-out = speaker_enhance.run(video, blur_background=True)
-
-# create a corrected video with a custom background color
-out = speaker_enhance.run(video, background_color_rgb="255,255,255")
+# generate a video of two talking avatars
+out = video2dialogue.run(url, voice1, voice2, image1, image2)
 ```
 
 ## Deploying `video2dialogue` to your own Sieve account
