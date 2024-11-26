@@ -6,13 +6,13 @@ This is a Sieve pipeline that converts a YouTube video into an interactive dialo
 * Summary text is converted into speech using [tts](https://sievedata.com/functions/sieve/tts) Sieve function.
 * Talking avatars are generated with [portrait-avatar](https://sievedata.com/functions/sieve/portrait-avatar) Sieve function.
 
-**Note:** This function is a demo. To use it in production, please deploy it to [your own Sieve account](#deploying-speaker-enhance-to-your-own-sieve-account).
+**Note:** This function is a demo. To use it in production, please deploy it to [your own Sieve account](#deploying-video2dialogue-to-your-own-sieve-account).
 
 The pipeline completes jobs quickly by running each step (audio enhancement, background removal, eye contact correction) in parallel.
 
-You can try it here: [https://sievedata.com/functions/sieve/speaker-enhance](https://sievedata.com/functions/sieve/speaker-enhance)
+You can try it here: [https://sievedata.com/functions/sieve/video2dialogue](https://sievedata.com/functions/sieve/video2dialogue)
 
-Or see [Calling `speaker-enhance` via the Sieve SDK](#calling-speaker-enhance-via-the-sieve-sdk) to learn how to call the function via the Sieve Python SDK.
+Or see [Calling `video2dialogue` via the Sieve SDK](#calling-video2dialogue-via-the-sieve-sdk) to learn how to call the function via the Sieve Python SDK.
 
 ## Options
 
@@ -49,15 +49,15 @@ out = speaker_enhance.run(video, blur_background=True)
 out = speaker_enhance.run(video, background_color_rgb="255,255,255")
 ```
 
-## Deploying `speaker-enhance` to your own Sieve account
+## Deploying `video2dialogue` to your own Sieve account
 First ensure you have the Sieve Python SDK installed: `pip install sievedata` and set `SIEVE_API_KEY` to your Sieve API key.
 You can find your API key at [https://www.sievedata.com/dashboard/settings](https://www.sievedata.com/dashboard/settings).
 
 Then deploy the function to your account:
 ```bash
-git clone https://github.com/sieve-community/speaker-enhance
-cd speaker-enhance
-sieve deploy app.py
+git clone https://github.com/sieve-community/video2dialogue
+cd video2dialogue
+sieve deploy pipeline.py
 ```
 
 You can now find the function in your Sieve account and call it via API or SDK.
