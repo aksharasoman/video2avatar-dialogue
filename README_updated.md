@@ -6,9 +6,9 @@ This Sieve pipeline that converts a YouTube video into an interactive dialogue b
 * Summary text is converted into speech using [tts](https://sievedata.com/functions/sieve/tts) Sieve function.
 * Talking avatars are generated with [portrait-avatar](https://sievedata.com/functions/sieve/portrait-avatar) Sieve function.
 
-**Note:** This function is a demo. To use it in production, please deploy it to [your own Sieve account](#deploying-video2dialogue-to-your-own-sieve-account).
+The `tts` and `portrait-avatar` Sieve functions are executed in succession for each turn of the conversation to generate the corresponding avatar videos. For different speakers in the conversation, provide distinct voices as input for the `tts` function and different avatar images for the `portrait-avatar` function. This process can be parallelized to speed up the job (See `parallelized_version/pipeline.py`).
 
-The pipeline completes jobs quickly by running each step (audio enhancement, background removal, eye contact correction) in parallel.
+**Note:** This function is a demo. To use it in production, please deploy it using [your own Sieve account](#deploying-video2dialogue-to-your-own-sieve-account).
 
 You can try it here: [https://sievedata.com/functions/sieve/video2dialogue](https://sievedata.com/functions/sieve/video2dialogue)
 
