@@ -1,6 +1,6 @@
 # video2dialogue
 
-This is a Sieve pipeline that converts a YouTube video into an interactive dialogue between two talking avatars. It consists of the following steps:
+This Sieve pipeline that converts a YouTube video into an interactive dialogue between two talking avatars. It consists of the following steps:
 * Download YouTube Video with the [youtube_to_mp4](https://sievedata.com/functions/sieve/youtube_to_mp4) Sieve function.
 * Summarize the downloaded video into conversational-style text using [visual-qa](https://sievedata.com/functions/sieve/visual-qa) Sieve function (employ suitable prompt).
 * Summary text is converted into speech using [tts](https://sievedata.com/functions/sieve/tts) Sieve function.
